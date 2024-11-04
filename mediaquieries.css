@@ -19,7 +19,7 @@
         margin-top: 2rem;
     }
     #about {
-        padding: 0 0;
+        padding: 0;
     }
     #profile,
     .section-container {
@@ -45,11 +45,9 @@
     article .icon {
         height: 90px;
     }
-    .subdetail_container {
-        max-width: 470px;
-    }
+    .subdetail_container,
     .sub-detail_container {
-        max-width:300px ;
+        max-width: 300px;
     }
 }
 
@@ -65,7 +63,7 @@
         max-width: 35px;
     }
     #profile {
-        height:72vh;
+        height: 72vh;
         margin-bottom: 0;
     }
     .about-containers, .contact-info-upper-container,
@@ -76,7 +74,7 @@
         font-size: 0.9rem;
     }
     article, .sub-detail_container, .subdetail_container, .info-item p, .contact-info a {
-        font-size:0.9rem;
+        font-size: 0.9rem;
     }
     .nav-links {
         flex-direction: column;
@@ -111,10 +109,10 @@
         line-height: 1.4;
     }
     #about, #proficiencies, #other-platforms {
-        padding: 0 0;
+        padding: 0;
     }
     #proficiencies {
-        margin-top:5rem;
+        margin-top: 5rem;
     }
     #projects {
         padding: 5rem 0;
@@ -155,26 +153,19 @@
     .btn_color:hover {
         transform: scale(1);
     }
-    .subdetail_container {
-        max-width: 325px;
-    }
+    .subdetail_container,
     .sub-detail_container {
         max-width: 250px;
     }
-    article p {
-        text-align: center;
-    }
+    article p,
     .text_container p {
         text-align: center;
     }
     .contact-container {
         flex-direction: column;
-        padding-bottom: 0rem;
+        padding-bottom: 0;
     }
-    .contact-card {
-        max-width: 100%;
-    }
-    .contact-info {
+    .contact-card, .contact-info {
         max-width: 100%;
         text-align: center;
     }
@@ -203,3 +194,4 @@
         margin-top: 40px;
     }
 }
+
