@@ -234,6 +234,31 @@ section {
     box-shadow: 0 0 10px #61dafb, 0 0 20px #61dafb; /* Glow effect on hover */
 }
 
+/* Social Media Icons Section */
+
+.social_media_container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social_icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #61dafb, 0 0 20px #61dafb; /* Match glow effect */
+    cursor: pointer;
+}
+
+.social_icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #4f7ebf, 0 0 25px #4f7ebf; /* Slightly stronger glow on hover */
+}
+
+}
+
 /* ABOUT SECTION */
 
 #about {
