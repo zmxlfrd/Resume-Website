@@ -382,7 +382,7 @@ article p {
     max-width: 340px;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Added box-shadow transition */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Box-shadow transition */
 }
 
 .sub-detail_container:hover {
@@ -395,16 +395,115 @@ a.platform-link {
     text-decoration: none;
 }
 
-/* FOOTER */
+/* CONTACT SECTION */
 
-footer {
-    background-color: #282828; /* Dark background for footer */
-    padding: 1.5rem;
+#contact {
+    padding: 4rem 0;
     text-align: center;
 }
 
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.contact-card {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #444; /* Darker border for input fields */
+    background-color: #333; /* Dark background for inputs */
+    color: #eee; /* Light text for inputs */
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-button {
+    background: linear-gradient(90deg, #6091cc, #ef8ebf);
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #4f7ebf;
+    transform: scale(1.05);
+}
+
+.contact-info {
+    text-align: left;
+    flex: 1;
+    max-width: 400px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    color: #61dafb; /* Light blue header for contact info */
+}
+
+.contact-info a {
+    color: #bbb; /* Light gray for contact links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: rgb(96, 145, 204);
+}
+
+/* FOOTER SECTION */
+
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #282828; /* Dark background for footer */
+}
+
 footer p {
-    color: #bbb; /* Lighter gray for footer text */
+    color: #bbb; /* Light gray for footer text */
+    margin: 0;
 }
 
 footer a {
@@ -412,5 +511,11 @@ footer a {
 }
 
 footer a:hover {
-    color: rgb(96, 145, 204); /* Change hover color */
+    color: rgb(96, 145, 204); /* Light blue on hover */
 }
+
+footer p::before {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
