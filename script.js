@@ -5,20 +5,19 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-function sendMail() {
-    var params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-    };
-
-    emailjs.send("service_20pigze", "template_jm79tde", params)
-        .then((res) => {
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
-            console.log(res);
-            alert("Message sent successfully!");
-        })
-        .catch((err) => console.log(err));
+function sendemail() {
+    const formData = new FormData(document.getElementById("contactForm"));
+    
+    fetch("process-form.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert("Message sent successfully!");
+    })
+    .catch(error => {
+        alert("There was an error sending your message.");
+    });
 }
+
